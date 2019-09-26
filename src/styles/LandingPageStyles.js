@@ -25,14 +25,19 @@ export default makeStyles({
     flexDirection: "column",
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "rgba(0,0,0,0.5)",
     color: "#edeef2",
     textShadow: "2px 2px rgba(0,0,0,0.8)",
-    "& h3": {
-      fontSize: "2.5rem",
+    "& h1": {
+      fontSize: "4rem",
     },
-    "& p": {
-      fontSize: "1.6rem",
+    "& h2": {
+      fontSize: "2.3rem",
+      fontWeight: "500"
+    },
+    "& h3": {
+      marginTop: "70px",
+      fontSize: "1.2rem",
       fontWeight: "500"
     }
   },

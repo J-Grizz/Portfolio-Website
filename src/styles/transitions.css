@@ -7,7 +7,7 @@
 /* Declare transition properties */
 .slide-enter.slide-enter-active {
   opacity: 1;
-  transition: all 1s linear 1s;
+  transition: all 5s linear 1s;
 }
 
 /* EXIT TRANSITION */
@@ -18,5 +18,5 @@
 
 .slide-exit.slide-exit-active {
   opacity: 0;
-  transition: all 1s linear
+  transition: all 5s linear
 }
