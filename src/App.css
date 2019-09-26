@@ -1,4 +1,12 @@
 .App {
-  font-family: 'Comfortaa', monospace;
+
+  font-family: 'Ubuntu', sans-serif;
+  widows: 100vh;
+  height: 100vh;
   position: relative;
+  cursor: url(images/mouse.png), auto;
+}
+
+.App:active {
+  cursor: url(images/mouseClick.png), auto;
 }

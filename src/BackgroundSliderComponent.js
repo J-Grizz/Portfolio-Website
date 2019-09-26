@@ -12,7 +12,6 @@ export default function BackgroundSliderComponent(props) {
   useEffect(() => {
     const interval = setInterval(() => {
       count < imgs.length - 1 ? setCount(count => count + 1) : setCount(0);
-      console.log(count)
       setCurrentImg(imgs[count]);
     }, duration * 1000);
     return () => clearInterval(interval);
