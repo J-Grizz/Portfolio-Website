@@ -52,20 +52,19 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton> */}
 
-          <Button
-            className={classes.navButton}
-            color="inherit"
-            size="large"
-          >
-            <NavLink
-              className={classes.link}
-              to="/">
+          <NavLink
+            className={classes.link}
+            to="/">
+            <Button
+              className={classes.navButton}
+              color="inherit"
+              size="large"
+            >
               <h4>
                 James Gray
               </h4>
-            </NavLink>
-          </Button>
-
+            </Button>
+          </NavLink>
 
         </Toolbar>
       </AppBar>

@@ -1,7 +1,9 @@
 import React from 'react'
-import Paper from '@material-ui/core/Paper';
-import Navbar from "./Navbar"
 import { makeStyles } from "@material-ui/styles";
+import Paper from '@material-ui/core/Paper';
+
+import Navbar from "./Navbar"
+import SumarisedPortFolio from "./SummarisedPortfolio"
 
 const useStyles = makeStyles({
   root: {
@@ -14,10 +16,12 @@ const useStyles = makeStyles({
     overflow: "hidden",
     zIndex: "1",
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
     flexWrap: "wrap",
     backgroundColor: "rgba(0,0,0,0.4)",
+    paddingTop: "115px",
+    paddingLeft: "36px",
     color: "#edeef2",
     textDecoration: "none",
     textShadow: "2px 2px rgba(0,0,0,0.6)",
@@ -34,16 +38,20 @@ const useStyles = makeStyles({
       fontSize: "1.3rem",
       fontWeight: "500"
     },
-  }
+  },
+
 })
 
 export default function HomePage(props) {
   const classes = useStyles();
   return (
     <div>
+
       <Navbar />
+
       <Paper className={classes.root}>
-        <h1>Home Page</h1>
+        <SumarisedPortFolio />
+
       </Paper>
     </div>
   )

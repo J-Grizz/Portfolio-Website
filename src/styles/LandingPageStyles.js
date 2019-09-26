@@ -22,7 +22,7 @@ export default makeStyles({
     textDecoration: "none",
     textShadow: "2px 2px rgba(0,0,0,0.6)",
     letterSpacing: ".3rem",
-    cursor: `url(${mouse}), auto`,
+    cursor: `url(${mouseClick}), auto`,
     "&:active": {
       cursor: `url(${mouseClick}), auto`
     },
