@@ -4,9 +4,9 @@
   widows: 100vh;
   height: 100vh;
   position: relative;
-  cursor: url(images/mouse.png), auto;
+  cursor: url(media/mouse.png), auto;
 }
 
 .App:active {
-  cursor: url(images/mouseClick.png), auto;
+  cursor: url(media/mouseClick.png), auto;
 }
