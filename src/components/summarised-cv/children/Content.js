@@ -56,7 +56,6 @@ export default function Content(props) {
       <Typography gutterBottom variant="h5" component="h2">
         Summarised CV
       </Typography>
-
       {CVContent}
     </CardContent>
 

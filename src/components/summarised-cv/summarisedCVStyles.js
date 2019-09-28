@@ -25,5 +25,4 @@ export default makeStyles({
       cursor: `url(${mouseClick}), auto`
     },
   },
-
 })

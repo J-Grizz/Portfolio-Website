@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group"
 import BackgroundSlider from "./components/background-slider/BackgroundSlider";
 import LandingPage from "./pages/landingpage/LandingPage";
 import HomePage from "./pages/homepage/HomePage";
+import ProjectsPage from "./pages/projectspage/ProjectsPage"
 import Page from "./components/page/Page"
 
 import './App.css';
@@ -55,10 +56,19 @@ function App(props) {
                 />
                 <Route
                   exact
-                  path="/homepage"
+                  path="/home"
                   render={() =>
                     <Page>
                       <HomePage />
+                    </Page>
+                  }
+                />
+                <Route
+                  exact
+                  path="/projects"
+                  render={() =>
+                    <Page>
+                      <ProjectsPage />
                     </Page>
                   }
                 />
@@ -76,5 +86,9 @@ function App(props) {
     </div>
   );
 }
+
+// My Story
+// CV
+// projects
 
 export default App;

@@ -6,7 +6,7 @@ export default function LandingPage(props) {
   const classes = useStyles();
 
   return (
-    <Link className={classes.root} to="/homepage">
+    <Link className={classes.root} to="/home">
       <div>
         <h1>
           Hello and Welcome !
