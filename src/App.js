@@ -6,9 +6,7 @@ import LandingPage from "./pages/landingpage/LandingPage";
 import HomePage from "./pages/homepage/HomePage";
 import ProjectsPage from "./pages/projectspage/ProjectsPage"
 import Page from "./components/page/Page"
-
 import './App.css';
-
 import img1 from "./media/background1.jpg";
 import img2 from "./media/background2.jpg";
 import img3 from "./media/background3.jpg";

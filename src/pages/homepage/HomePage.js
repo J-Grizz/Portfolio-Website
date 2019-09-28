@@ -2,18 +2,14 @@ import React from 'react'
 import useStyles from "./HomePageStyles"
 import Paper from '@material-ui/core/Paper';
 import { Link } from "react-router-dom"
-
 import Navbar from "../../components/navbar/Navbar"
 import SumarisedPortFolio from "../../components/summarised-cv/SummarisedCV"
-
 
 export default function HomePage(props) {
   const classes = useStyles();
   return (
     <div>
-
       <Navbar />
-
       <Paper className={classes.root}>
         <SumarisedPortFolio />
         <div
@@ -36,9 +32,6 @@ export default function HomePage(props) {
           </Link>
         </div>
       </Paper>
-
-
-
     </div>
   )
 }

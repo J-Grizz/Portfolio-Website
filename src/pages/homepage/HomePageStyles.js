@@ -1,8 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import mouseClick from "../../media/mouseClick.png";
 
-
-
 export default makeStyles({
   root: {
     top: "0",
@@ -25,7 +23,6 @@ export default makeStyles({
     flexDirection: "column",
     justifyContent: "space-between",
     alignItems: "center",
-
     maxWidth: "875px",
     height: "800px",
   },
@@ -38,7 +35,6 @@ export default makeStyles({
     fontSize: "2rem",
     backgroundColor: "rgba(255,255,255,.6) !important",
     transition: "all 700ms ease-in-out !important",
-
     "&:hover": {
       transform: "scale(1.01)",
       backgroundColor: "rgba(255,255,255,.8) !important",
