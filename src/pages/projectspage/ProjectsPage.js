@@ -3,12 +3,26 @@ import { Grid } from "@material-ui/core";
 import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import useStyles from "./ProjectsPageStyles"
+import interactiveIphone from "../../media/interactive-iPhone1.png";
+import colorPalette from "../../media/color-palette-project.png"
 
 ProjectsPage.defaultProps = {
   projects: [
-    { name: "Interactive iPhone", url: "https://interactive-iphone.herokuapp.com/" },
-    { name: "View Views" },
-    { name: "Color Palette Project" }
+    {
+      name: "Interactive iPhone",
+      url: "https://interactive-iphone.herokuapp.com/",
+      image: interactiveIphone
+    },
+    {
+      name: "Color Palette Project",
+      url: "http://colorpalettes.netlify.com",
+      image: colorPalette
+    },
+    {
+      name: "View Views",
+      url: "",
+      image: "https://source.unsplash.com/random"
+    }
   ],
 };
 

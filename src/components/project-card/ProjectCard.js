@@ -26,7 +26,7 @@ export default function Project(props) {
         >
           <CardMedia
             className={classes.media}
-            image="https://source.unsplash.com/random"
+            image={project.image}
             title="Contemplative Reptile"
           />
           <CardContent>
@@ -50,4 +50,4 @@ export default function Project(props) {
       </Card>
     </Grid>
   )
-}
+};
