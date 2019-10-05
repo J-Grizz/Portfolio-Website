@@ -4,16 +4,11 @@ import mouseClick from "../../media/mouseClick.png";
 export default makeStyles({
   itemContainer: {
     paddingTop: "50px",
-    display: "flex",
-    alignItems: "flex-start",
-    justifyContent: "center",
-    height: "100%"
   },
   card: {
     opacity: ".9",
     color: "black",
     height: 750,
-    maxWidth: 545,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:hover": {
@@ -22,7 +17,6 @@ export default makeStyles({
     },
     "&:hover media": {
       opacity: "1",
-
     }
   },
   media: {

@@ -27,15 +27,13 @@ export default function Project(props) {
           <CardMedia
             className={classes.media}
             image={project.image}
-            title="Contemplative Reptile"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {project.name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              Those with a descerning eye should notice that this is infact just a pretty skin put onto Colt Steels famous YelpCamp project from the webdev Bootcamp on Udemy therefore the point of this project not only intended to show my back-end skills with a simple CRUD project using a MEN stack and EJS as a view engine, deplyed with heroku and mongoAAtlas as a database (although I have grasped and understood the concepts) but mainly to display how I migrated the old Bootstrap v3 design to Boostrap 4 and vamped it up with mdbootstrap for a classy material finish, all without the aid of any video follow along.
               </Typography>
           </CardContent>
         </CardActionArea>

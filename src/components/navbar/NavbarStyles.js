@@ -2,7 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
   root: {
-    position: "relative",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    position: "fixed",
     flexGrow: 1,
     zIndex: 10
   },
