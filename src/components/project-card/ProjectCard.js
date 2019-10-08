@@ -3,14 +3,22 @@ import Card from '@material-ui/core/Card';
 import { Grid } from "@material-ui/core";
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import useStyles from "./ProjectStyles"
+import ProjectContent from "./children/Content";
+import WriteUpDialog from "./children/WriteUpDialog";
 
 export default function Project(props) {
-  const { project } = props;
+  const [open, setOpen] = React.useState(false);
+  const { projectData } = props;
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   const classes = useStyles();
   return (
     <Grid
@@ -20,31 +28,30 @@ export default function Project(props) {
     >
       <Card className={classes.card}>
         <CardActionArea
-          href={project.url}
+          href={projectData.url}
           target="_blank"
           rel="noopener noreferrer"
         >
           <CardMedia
             className={classes.media}
-            image={project.image}
+            image={projectData.image}
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {project.name}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Those with a descerning eye should notice that this is infact just a pretty skin put onto Colt Steels famous YelpCamp project from the webdev Bootcamp on Udemy therefore the point of this project not only intended to show my back-end skills with a simple CRUD project using a MEN stack and EJS as a view engine, deplyed with heroku and mongoAAtlas as a database (although I have grasped and understood the concepts) but mainly to display how I migrated the old Bootstrap v3 design to Boostrap 4 and vamped it up with mdbootstrap for a classy material finish, all without the aid of any video follow along.
-              </Typography>
-          </CardContent>
+          <ProjectContent projectData={projectData} />
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-        </Button>
-          <Button size="small" color="primary">
-            Learn More
-        </Button>
+
+          <Button onClick={handleClickOpen} size="small" color="primary">
+            Full Writeup
+          </Button>
         </CardActions>
+
+        <WriteUpDialog
+          projectData={projectData}
+          handleClose={handleClose}
+          open={open}
+        />
+
+
       </Card>
     </Grid>
   )

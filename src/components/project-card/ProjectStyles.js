@@ -2,18 +2,17 @@ import { makeStyles } from "@material-ui/styles";
 import mouseClick from "../../media/mouseClick.png";
 
 export default makeStyles({
-  itemContainer: {
-    paddingTop: "50px",
-  },
   card: {
-    opacity: ".9",
+    margin: "0 30px",
+    backgroundColor: "rgba(255,255,255,.6)",
     color: "black",
+    textAlign: "left",
     height: 750,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:hover": {
       transform: "scale(1.01)",
-      opacity: "1",
+      backgroundColor: "rgba(255,255,255,.8)",
     },
     "&:hover media": {
       opacity: "1",

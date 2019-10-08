@@ -7,15 +7,16 @@ import { projectData } from "../../portfolioData";
 
 export default function ProjectsPage(props) {
   const classes = useStyles()
-  const projectCards = projectData.map(project => <ProjectCard project={project} />)
+  const projectCards = projectData.map(project => <ProjectCard projectData={project} />)
   return (
     <Grid
+      justify={"space-around"}
       container
       spacing={3}
       className={classes.grid}
     >
       <Navbar />
       {projectCards}
-    </Grid >
+    </Grid>
   )
 };
