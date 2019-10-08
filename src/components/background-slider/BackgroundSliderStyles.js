@@ -11,5 +11,8 @@ export default makeStyles({
     opacity: "1",
     zIndex: "-1000",
     margin: "0"
+  },
+  hiddenImg: {
+    display: "none"
   }
 })

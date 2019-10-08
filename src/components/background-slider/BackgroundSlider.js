@@ -19,6 +19,7 @@ export default function BackgroundSliderComponent(props) {
 
   return (
     <TransitionGroup>
+      <img className={classes.hiddenImg} src={imgs[count + 1]} alt="" />
       <CSSTransition
         in={true}
         appear={false}

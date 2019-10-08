@@ -33,15 +33,15 @@ export default function HomePage(props) {
         <div
           className={classes.utilityContainer}
         >
-          <Link className={classes.link}>
+          {/* <Link className={classes.link}>
             <Paper className={classes.utilityPaper}>
               My story preview
               </Paper>
-          </Link>
+          </Link> */}
           <Link className={classes.link} to="/projects">
             <Paper className={classes.utilityPaper}>
-              project previewbar
-             </Paper>
+
+            </Paper>
           </Link>
           <Link className={classes.link}>
             <Paper className={classes.utilityPaper}>

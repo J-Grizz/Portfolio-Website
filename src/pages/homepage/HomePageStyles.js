@@ -15,9 +15,15 @@ export default makeStyles({
     flexDirection: "column",
     justifyContent: "space-between",
     height: "800px",
+    "& a": {
+      height: "20%"
+    },
+    "& a:nth-of-type(1)": {
+      height: "76%"
+    }
   },
   utilityPaper: {
-    height: "240px",
+    height: "100%",
     fontSize: "2rem",
     backgroundColor: "rgba(255,255,255,.6) !important",
     transition: "all 700ms ease-in-out !important",
