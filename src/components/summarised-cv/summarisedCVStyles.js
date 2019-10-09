@@ -7,7 +7,6 @@ export default makeStyles({
     color: "black",
     textAlign: "left",
     maxWidth: 875,
-    height: 800,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:active": {

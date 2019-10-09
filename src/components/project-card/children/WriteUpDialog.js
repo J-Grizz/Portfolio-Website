@@ -8,7 +8,15 @@ import Button from '@material-ui/core/Button';
 
 export default function WriteUpDialog(props) {
   const { handleClose, open, projectData } = props;
-  console.log(projectData)
+  const skills = projectData.skills.map(each => <p>-{each}</p>);
+  const technologies = projectData.technologies.map(each => <p>-{each}</p>);
+  const challenges = projectData.challenges.map((each, i) =>
+    <div>
+      <p>Challenge {i + 1}: {each.challenge}</p>
+      <p>Solution: {each.solution}</p>
+    </div>
+
+  );
   return (
     <Dialog
       fullWidth={true}
@@ -29,7 +37,23 @@ export default function WriteUpDialog(props) {
         </DialogContentText>
         <DialogContentText>
           <h4>Challenges:</h4>
-          {projectData.challenges.challengeOne.challenge}
+          {challenges}
+        </DialogContentText>
+        <DialogContentText>
+          <h4>Technolgies Used:</h4>
+          {technologies}
+        </DialogContentText>
+        <DialogContentText>
+          <h4>Skills Used:</h4>
+          {skills}
+        </DialogContentText>
+        <DialogContentText>
+          <h4>Conclusion:</h4>
+          {projectData.conclusion}
+        </DialogContentText>
+        <DialogContentText>
+          <h4>Checkout the repo:</h4>
+          <a target="_blank" rel="noopener noreferrer" href={projectData.gitHub}>{projectData.name} Repo</a>
         </DialogContentText>
       </DialogContent>
       <DialogActions>

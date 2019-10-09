@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/styles";
 
 export default makeStyles({
   backgroundStyles: {
-    height: "100%",
-    width: "100%",
-    position: "absolute",
+    height: "100vh",
+    width: "100vw",
+    position: "fixed",
     top: "0px",
     left: "0px",
     color: "transparent",

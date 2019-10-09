@@ -12,7 +12,6 @@ export default function ProjectsPage(props) {
     <Grid
       justify={"space-around"}
       container
-      spacing={3}
       className={classes.grid}
     >
       <Navbar />

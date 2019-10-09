@@ -1,7 +1,5 @@
 .App {
   font-family: 'Ubuntu', sans-serif;
-  height: 100vh;
-  position: relative;
   cursor: url(media/mouse.png), auto;
 }
 
