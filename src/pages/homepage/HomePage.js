@@ -12,6 +12,7 @@ export default function HomePage(props) {
   return (
     <Grid
       container
+      spacing={3}
       justify="space-around"
       alignItems="flex-start"
       className={classes.grid}
@@ -23,7 +24,9 @@ export default function HomePage(props) {
         item
         sm={6}
       >
-        <SumarisedPortFolio />
+        <Link className={classes.link} to="/cv">
+          <SumarisedPortFolio />
+        </Link>
       </Grid>
       <Grid
         className={classes.gridItem}

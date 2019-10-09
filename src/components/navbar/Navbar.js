@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom"
 import useStyles from "./NavbarStyles"
 
 Navbar.defaultProps = {
-  navNames: ["home", "Projects"]
+  navNames: ["home", "Projects", "CV"]
 }
 
 export default function Navbar(props) {

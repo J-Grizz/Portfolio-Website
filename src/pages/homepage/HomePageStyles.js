@@ -3,7 +3,7 @@ import mouseClick from "../../media/mouseClick.png";
 
 export default makeStyles({
   grid: {
-    width: "100%",
+    width: "100% !important",
     padding: "1.5rem",
     paddingTop: "110px",
     userSelect: "none",

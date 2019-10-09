@@ -16,6 +16,7 @@ export default makeStyles(theme => ({
     background: "rgba(255,255,255,.1)",
   },
   navButton: {
+    width: "170px",
     cursor: "none",
     borderRadius: "0",
     "&:hover": {
