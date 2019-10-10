@@ -4,37 +4,45 @@ import mouseClick from "../../media/mouseClick.png";
 export default makeStyles({
   grid: {
     width: "100% !important",
+    margin: "0 !important",
     padding: "1.5rem",
     paddingTop: "110px",
     userSelect: "none",
     color: "#edeef2",
   },
   utilityContainer: {
+    height: "780px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     "& a": {
-      height: "20%"
+      height: "10%",
     },
-    "& a:nth-of-type(1)": {
-      height: "76%"
-    }
   },
   utilityPaper: {
-    height: "100%",
-    fontSize: "2rem",
+    popsition: "relative",
+    height: "10%",
+    fontSize: "1.5rem",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "rgba(255,255,255,.6) !important",
     transition: "all 700ms ease-in-out !important",
     "&:hover": {
       transform: "scale(1.01)",
-      backgroundColor: "rgba(255,255,255,.8) !important",
-    },
+    }
   },
   link: {
+    color: "black",
     textDecoration: "none",
     cursor: `url(${mouseClick}), auto`,
     "&:active": {
       cursor: `url(${mouseClick}), auto`
     },
+  },
+  button: {
+    fontFamily: "'Ubuntu', sans-serif;",
+    fontSize: "1.5rem !important",
+
   }
 });

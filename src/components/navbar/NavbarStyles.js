@@ -7,20 +7,22 @@ export default makeStyles(theme => ({
     width: "100vw",
     position: "fixed",
     flexGrow: 1,
-    zIndex: 10
+    zIndex: 10,
   },
-  title: {
-    flexGrow: 1,
+  container: {
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "space-between",
   },
   navbar: {
-    background: "rgba(255,255,255,.1)",
+    background: "rgba(0,0,0,.7)",
   },
   navButton: {
     width: "170px",
     cursor: "none",
     borderRadius: "0",
     "&:hover": {
-      backgroundColor: "rgba(0,0,0,.4)"
+      backgroundColor: "rgba(255,255,255,.1)"
     }
   },
   link: {

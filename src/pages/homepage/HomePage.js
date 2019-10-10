@@ -3,8 +3,10 @@ import useStyles from "./HomePageStyles"
 import { Grid } from "@material-ui/core";
 import Paper from '@material-ui/core/Paper';
 import { Link } from "react-router-dom"
+import Button from "@material-ui/core/Button"
 import Navbar from "../../components/navbar/Navbar"
 import SumarisedPortFolio from "../../components/summarised-cv/SummarisedCV"
+import ProjectButton from "../../components/project-button/ProjectButton"
 
 export default function HomePage(props) {
   const classes = useStyles();
@@ -42,18 +44,35 @@ export default function HomePage(props) {
               </Paper>
           </Link> */}
           <Link className={classes.link} to="/projects">
-            <Paper className={classes.utilityPaper}>
-
-            </Paper>
+            <ProjectButton />
           </Link>
-          <Link className={classes.link}>
-            <Paper className={classes.utilityPaper}>
-              find out more about me (github, linkein etc)
-              </Paper>
-          </Link>
+          <Paper className={classes.utilityPaper}>
+            You can also check me out on
+            <Button
+              className={classes.button}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.link}
+                href="https://github.com/J-Grizz">
+                github
+              </a>
+            </Button>
+            or
+              <Button
+              className={classes.button}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.link}
+                href="https://www.linkedin.com/in/james-gray-4910a0a2/">
+                LinkedIn
+              </a>
+            </Button>
+          </Paper>
         </div>
       </Grid>
 
-    </Grid >
+    </Grid>
   )
 }

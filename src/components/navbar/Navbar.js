@@ -34,7 +34,7 @@ export default function Navbar(props) {
       <AppBar
         className={classes.navbar}
         position="static">
-        <Toolbar>
+        <Toolbar className={classes.container}>
           <NavLink
             className={classes.link}
             to="/">
@@ -48,7 +48,9 @@ export default function Navbar(props) {
               </h3>
             </Button>
           </NavLink>
-          {navs}
+          <div className={classes.rightNavs}>
+            {navs}
+          </div>
         </Toolbar>
       </AppBar>
     </div>

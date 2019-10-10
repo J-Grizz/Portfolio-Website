@@ -39,10 +39,18 @@ export default function Project(props) {
           <ProjectContent projectData={projectData} />
         </CardActionArea>
         <CardActions>
-
-          <Button onClick={handleClickOpen} size="small" color="primary">
+          <Button className={classes.button} onClick={handleClickOpen} size="small" color="primary">
             Full Writeup
           </Button>
+          <a
+            className={classes.link}
+            href={projectData.gitHub}
+            target="_blank"
+            rel="noopener noreferrer">
+            <Button className={classes.button} size="small" color="primary">
+              Repository
+            </Button>
+          </a>
         </CardActions>
 
         <WriteUpDialog
