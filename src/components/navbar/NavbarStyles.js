@@ -1,6 +1,6 @@
-import { makeStyles } from '@material-ui/core/styles';
+import sizes from "../../global-styles/sizes"
 
-export default makeStyles(theme => ({
+const styles = {
   root: {
     top: 0,
     left: 0,
@@ -29,5 +29,40 @@ export default makeStyles(theme => ({
     cursor: "none",
     color: "white",
     textDecoration: "none",
+  },
+  rightNavs: {
+    display: "flex",
+    alignItems: "center",
+  },
+  hiddingContainer: {
+    [sizes.down("sm")]: {
+      display: "none"
+    },
+  },
+  menuIcon: {
+    marginRight: "2rem",
+    fontSize: "2rem",
+    display: "none",
+    [sizes.down("sm")]: {
+      display: "block"
+    },
+  },
+  menu: {
+    curson: "none",
+    "& div": {
+      background: "rgba(0,0,0,.7)",
+      width: "100%"
+    },
+    "& li": {
+      width: "100%"
+    },
+    "& a": {
+      width: "100%"
+    },
+    "& button": {
+      width: "100%"
+    }
   }
-}));
+};
+
+export default styles;
