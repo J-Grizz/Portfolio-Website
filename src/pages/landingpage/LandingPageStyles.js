@@ -22,9 +22,6 @@ export default makeStyles({
     textShadow: "2px 2px rgba(0,0,0,0.6)",
     letterSpacing: ".3rem",
     cursor: `url(${mouseClick}), auto`,
-    "&:active": {
-      cursor: `url(${mouseClick}), auto`
-    },
     "& h1": {
       marginTop: 0,
       fontSize: "4rem",

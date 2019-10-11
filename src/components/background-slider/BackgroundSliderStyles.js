@@ -7,10 +7,8 @@ export default makeStyles({
     position: "fixed",
     top: "0px",
     left: "0px",
-    color: "transparent",
     opacity: "1",
     zIndex: "-1000",
-    margin: "0"
   },
   hiddenImg: {
     display: "none"

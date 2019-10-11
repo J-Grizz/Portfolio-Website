@@ -15,7 +15,6 @@ export default function Project(props) {
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -58,8 +57,6 @@ export default function Project(props) {
           handleClose={handleClose}
           open={open}
         />
-
-
       </Card>
     </Grid>
   )

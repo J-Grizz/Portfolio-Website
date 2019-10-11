@@ -1,8 +1,8 @@
-import React from 'react'
-import Typography from '@material-ui/core/Typography';
-import CardContent from '@material-ui/core/CardContent';
-import { makeStyles } from '@material-ui/core';
-import Box from "@material-ui/core/Box"
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import CardContent from "@material-ui/core/CardContent";
+import { makeStyles } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
 import mouseClick from "../../../media/mouseClick.png";
 
 
@@ -14,7 +14,6 @@ const useStyles = makeStyles({
   },
   cardContent: {
     cursor: `url(${mouseClick}), auto`,
-
   }
 })
 

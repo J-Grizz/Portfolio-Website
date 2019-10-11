@@ -34,15 +34,18 @@ export default function Content(props) {
   const classes = useStyles();
   const { content } = props;
 
-  const CVContent = content.map(each => {
+  const CVContent = content.map((each) => {
     return (
-      <div>
+      <div key={each.topic}>
         <Typography gutterBottom variant="h5" component="h4">
           {each.topic}:
         </Typography>
         <div className={classes.contentContainer}>
-          {each.content.map(section =>
-            <Typography variant="body2" component="p">
+          {each.content.map((section, i) =>
+            <Typography
+              variant="body2"
+              component="p"
+              key={i}>
               {section}
             </Typography>
           )}

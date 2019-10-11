@@ -1,34 +1,31 @@
 import sizes from "../../global-styles/sizes"
 
 const styles = {
-  root: {
+  navbar: {
     top: 0,
     left: 0,
     width: "100vw",
     position: "fixed",
-    flexGrow: 1,
     zIndex: 10,
-  },
-  container: {
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  navbar: {
     background: "rgba(0,0,0,.7)",
   },
-  navButton: {
-    width: "170px",
-    cursor: "none",
-    borderRadius: "0",
-    "&:hover": {
-      backgroundColor: "rgba(255,255,255,.1)"
-    }
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   link: {
     cursor: "none",
     color: "white",
     textDecoration: "none",
+  },
+  navButton: {
+    width: "11rem",
+    cursor: "none",
+    borderRadius: "0",
+    "&:hover": {
+      backgroundColor: "rgba(255,255,255,.1)"
+    }
   },
   rightNavs: {
     display: "flex",
@@ -40,6 +37,7 @@ const styles = {
     },
   },
   menuIcon: {
+    color: "white",
     marginRight: "2rem",
     fontSize: "2rem",
     display: "none",
@@ -48,7 +46,6 @@ const styles = {
     },
   },
   menu: {
-    curson: "none",
     "& div": {
       background: "rgba(0,0,0,.7)",
       width: "100%"

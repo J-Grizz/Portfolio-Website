@@ -22,7 +22,6 @@ export default function FullCV() {
       <Navbar />
       <embed className={classes.viewer} src="https://res.cloudinary.com/dufbyqbkk/image/upload/v1570584316/Portfolio/images/James%27%20CV.pdf"
         type="application/pdf"></embed>
-
     </div>
   )
 }

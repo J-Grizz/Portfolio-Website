@@ -7,7 +7,7 @@ import { projectData } from "../../portfolioData";
 
 export default function ProjectsPage(props) {
   const classes = useStyles()
-  const projectCards = projectData.map(project => <ProjectCard projectData={project} />)
+  const projectCards = projectData.map(project => <ProjectCard key={project.name} projectData={project} />)
   return (
     <Grid
       justify={"space-around"}

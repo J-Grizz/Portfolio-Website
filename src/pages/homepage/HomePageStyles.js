@@ -8,7 +8,6 @@ export default makeStyles({
     padding: "1.5rem",
     paddingTop: "110px",
     userSelect: "none",
-    color: "#edeef2",
   },
   utilityContainer: {
     height: "780px",
@@ -36,13 +35,9 @@ export default makeStyles({
     color: "black",
     textDecoration: "none",
     cursor: `url(${mouseClick}), auto`,
-    "&:active": {
-      cursor: `url(${mouseClick}), auto`
-    },
   },
   button: {
     fontFamily: "'Ubuntu', sans-serif;",
     fontSize: "1.5rem !important",
-
   }
 });

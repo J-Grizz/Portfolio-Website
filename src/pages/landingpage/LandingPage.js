@@ -1,6 +1,6 @@
-import React from "react"
-import useStyles from "./LandingPageStyles"
+import React from "react";
 import { Link } from "react-router-dom";
+import useStyles from "./LandingPageStyles";
 
 export default function LandingPage(props) {
   const classes = useStyles();

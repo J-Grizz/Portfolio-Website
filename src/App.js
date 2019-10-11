@@ -1,34 +1,26 @@
-import React from 'react';
+import React from "react";
 import { Route, Switch } from "react-router-dom"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
+import Page from "./components/page/Page"
 import BackgroundSlider from "./components/background-slider/BackgroundSlider";
 import LandingPage from "./pages/landingpage/LandingPage";
 import HomePage from "./pages/homepage/HomePage";
 import ProjectsPage from "./pages/projectspage/ProjectsPage"
 import FullCV from "./pages/fullcv/FullCV"
-import Page from "./components/page/Page"
-import './App.css';
-import img1 from "./media/background10.jpg";
-import img2 from "./media/background1.jpg";
-import img3 from "./media/background2.jpg";
-import img4 from "./media/background6.jpg";
-import img5 from "./media/background7.jpg";
-import img7 from "./media/background9.jpg";
+import "./App.css";
 
 App.defaultProps = {
-  imgs: [img1, img2, img3, img4, img5, img7],
   sliderDuration: 8
 }
 
 function App(props) {
-  const { imgs, sliderDuration } = props;
+  const { sliderDuration } = props;
 
   return (
     <div className="App">
 
       <BackgroundSlider
         duration={sliderDuration}
-        imgs={imgs}
       />
 
       <Route
@@ -90,9 +82,5 @@ function App(props) {
     </div>
   );
 }
-
-// My Story
-// CV
-// projects
 
 export default App;
