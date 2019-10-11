@@ -61,7 +61,7 @@ function App(props) {
                 />
                 <Route
                   exact
-                  path="/cv"
+                  path="/resume"
                   render={() =>
                     <Page>
                       <FullCV />

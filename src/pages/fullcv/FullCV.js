@@ -1,8 +1,9 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Navbar from "../../components/navbar/Navbar"
+import React from "react";
+import Navbar from "../../components/navbar/Navbar";
+import { withStyles } from "@material-ui/styles";
+import sizes from "../../global-styles/sizes"
 
-const useStyles = makeStyles({
+const styles = {
   root: {
     width: "100vw",
     height: "100vh",
@@ -10,18 +11,33 @@ const useStyles = makeStyles({
     justifyContent: "center",
   },
   viewer: {
-    margin: "100px 0 30px 0",
-    width: "44%"
+    margin: "90px 0 20px 0",
+    width: "60%",
+    [sizes.down("xl")]: {
+      width: "65%",
+    },
+    [sizes.down("lg")]: {
+      width: "75%",
+    },
+    [sizes.down("md")]: {
+      width: "90%",
+    },
+    [sizes.down("sm")]: {
+      width: "95%",
+    },
   }
-})
+};
 
-export default function FullCV() {
-  const classes = useStyles();
+function FullCV(props) {
+  const { classes } = props;
+
   return (
     <div className={classes.root}>
       <Navbar />
-      <embed className={classes.viewer} src="https://res.cloudinary.com/dufbyqbkk/image/upload/v1570584316/Portfolio/images/James%27%20CV.pdf"
+      <embed className={classes.viewer} src="https://res.cloudinary.com/dufbyqbkk/image/upload/v1570819330/Portfolio/James%27-Resume.pdf"
         type="application/pdf"></embed>
     </div>
   )
-}
+};
+
+export default withStyles(styles)(FullCV);

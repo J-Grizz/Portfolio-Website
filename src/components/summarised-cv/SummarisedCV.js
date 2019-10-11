@@ -16,7 +16,9 @@ export default function SummarisedPortfolio() {
           className={classes.media}
           image={cardBackground}
         />
-
+        <div className={classes.hiddenCont}>
+          <h1 className={classes.hiddenText}> Click to view full Resume </h1>
+        </div>
         <Content content={CVObject} />
 
       </CardActionArea>

@@ -2,24 +2,24 @@ import interactiveIphone from "./media/interactive-iPhone1.png";
 import colorPalette from "./media/color-palette-project.png";
 import viewsOfViews from "./media/views-of-views.png";
 
-const CVObject = [
-  {
+const CVObject = {
+  desc: {
     topic: "Personal Description",
-    content: ["Once an idealistic boy, slightly mislead and lost in the wilderness. I have now discovered not just my passion but something much more. I find it hard to describe but I'm sure those who understand can relate."]
+    content: ["I am a driven optimist who enjoys challenging the status quo. After one year at varcity, I went on to complete my yacht masters and sailed all around the world. It was while working as a waiter that I discovered programming. Currently, I aspire to become a front-end UX developer."]
   },
-  {
+  exp: {
     topic: "Experience",
     content: ["In regards to programming I have no professional experience to date, I do however have a willingness to learn and a passion for problem solving. I believe my potential far outweighs my lack of professional experience, but don't take my word for it, check out my projects and decide for yourself."]
   },
-  {
+  famTech: {
     topic: "Familiar Technologies",
-    content: ["-HTML", "-CSS", "-JavaScript", "-React", "-MaterialUI", "-Bootstrap", "-JQuery", "-SCSS", "-JSS", "-NodeJS", "-Express", "-NPM", "-Git", "-GitHub",]
+    content: ["HTML5 & CSS3", "JavaScript", "React", "MaterialUI", "Bootstrap", "JQuery", "SCSS", "JSS", "NodeJS", "Express", "NPM", "Git", "GitHub",]
   },
-  {
+  skills: {
     topic: "Skills",
-    content: ["-Problem Solving", "-Logic", "-Tying Knots", "-advanced googling techniques"]
+    content: ["Problem Solving", "Logic", "Tying Knots", "advanced googling techniques"]
   }
-];
+};
 
 const projectData = [
   {

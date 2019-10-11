@@ -1,4 +1,4 @@
-import sizes from "../../global-styles/sizes"
+import sizes from "../../global-styles/sizes";
 
 const styles = {
   navbar: {

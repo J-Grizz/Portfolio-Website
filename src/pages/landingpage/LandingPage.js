@@ -9,7 +9,7 @@ export default function LandingPage(props) {
     <Link className={classes.root} to="/home">
       <div>
         <h1>
-          Hello and Welcome !
+          Hello and Welcome!
       </h1>
         <h2>
           My name is James Gray, and this is my personal website.

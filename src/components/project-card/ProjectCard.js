@@ -1,28 +1,30 @@
 import React from "react";
 import Card from '@material-ui/core/Card';
 import { Grid } from "@material-ui/core";
+import { withStyles } from "@material-ui/styles";
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import useStyles from "./ProjectStyles"
+import styles from "./ProjectStyles"
 import ProjectContent from "./children/Content";
 import WriteUpDialog from "./children/WriteUpDialog";
 
-export default function Project(props) {
+function Project(props) {
   const [open, setOpen] = React.useState(false);
-  const { projectData } = props;
+  const { projectData, classes } = props;
   const handleClickOpen = () => {
     setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
   };
-  const classes = useStyles();
   return (
     <Grid
       item
-      sm={4}
+      lg={4}
+      md={6}
+      sm={12}
       className={classes.itemContainer}
     >
       <Card className={classes.card}>
@@ -61,3 +63,5 @@ export default function Project(props) {
     </Grid>
   )
 };
+
+export default withStyles(styles)(Project);

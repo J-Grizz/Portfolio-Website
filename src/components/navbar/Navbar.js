@@ -10,7 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import styles from "./NavbarStyles"
 
 Navbar.defaultProps = {
-  navNames: ["home", "Projects", "CV"]
+  navNames: ["Home", "Projects", "Resume"]
 }
 
 function Navbar(props) {

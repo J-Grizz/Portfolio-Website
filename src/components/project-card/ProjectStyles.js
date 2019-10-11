@@ -1,15 +1,23 @@
-import { makeStyles } from "@material-ui/styles";
 import mouseClick from "../../media/mouseClick.png";
+import sizes from "../../global-styles/sizes";
 
-export default makeStyles({
+const styles = {
+  itemContainer: {
+    display: "flex",
+    justifyContent: "center"
+  },
   card: {
     margin: "0 30px",
+    marginBottom: "30px",
     backgroundColor: "rgba(255,255,255,.6)",
     color: "black",
     textAlign: "left",
     height: 750,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
+    [sizes.down("md")]: {
+      maxWidth: 600
+    },
     "&:hover": {
       transform: "scale(1.01)",
       backgroundColor: "rgba(255,255,255,.8)",
@@ -31,4 +39,6 @@ export default makeStyles({
   button: {
     cursor: `url(${mouseClick}), auto`,
   }
-});
+};
+
+export default styles;

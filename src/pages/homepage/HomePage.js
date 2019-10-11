@@ -24,16 +24,16 @@ export default function HomePage(props) {
       <Grid
         className={classes.gridItem}
         item
-        sm={6}
+        md={6}
       >
-        <Link className={classes.link} to="/cv">
+        <Link className={classes.link} to="/resume">
           <SumarisedPortFolio />
         </Link>
       </Grid>
       <Grid
         className={classes.gridItem}
         item
-        sm={6}
+        md={6}
       >
         <div
           className={classes.utilityContainer}

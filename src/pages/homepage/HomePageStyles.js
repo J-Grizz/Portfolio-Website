@@ -9,6 +9,9 @@ export default makeStyles({
     paddingTop: "110px",
     userSelect: "none",
   },
+  gridItem: {
+    width: "100%"
+  },
   utilityContainer: {
     height: "780px",
     display: "flex",
