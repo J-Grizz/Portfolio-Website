@@ -40,7 +40,12 @@ function Project(props) {
           <ProjectContent projectData={projectData} />
         </CardActionArea>
         <CardActions>
-          <Button className={classes.button} onClick={handleClickOpen} size="small" color="primary">
+          <Button
+            className={classes.button}
+            onClick={handleClickOpen}
+            size="large"
+            variant="outlined"
+          >
             Full Writeup
           </Button>
           <a
@@ -48,7 +53,11 @@ function Project(props) {
             href={projectData.gitHub}
             target="_blank"
             rel="noopener noreferrer">
-            <Button className={classes.button} size="small" color="primary">
+            <Button
+              className={classes.button}
+              size="large"
+              variant="outlined"
+            >
               Repository
             </Button>
           </a>

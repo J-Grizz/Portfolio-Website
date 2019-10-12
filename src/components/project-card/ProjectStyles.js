@@ -38,6 +38,7 @@ const styles = {
   },
   button: {
     cursor: `url(${mouseClick}), auto`,
+    color: "black"
   }
 };
 

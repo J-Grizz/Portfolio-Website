@@ -10,7 +10,11 @@ const useStyles = makeStyles({
   container: {
     height: 190,
     fontSize: "1.2rem",
-    textOverflow: "ellipsis"
+    fontWeight: "100",
+    textOverflow: "ellipsis",
+    display: "flex",
+    alignItems: "center",
+    color: "rgb(50,50,50)"
   },
   cardContent: {
     cursor: `url(${mouseClick}), auto`,

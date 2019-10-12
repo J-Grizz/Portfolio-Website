@@ -3,7 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import useStyles from "./ProjectButtonStyles";
-import img from "../../media/interactive-iPhone1.png";
+import img from "../../media/projects-cover.png";
 
 export default function ProjectButton() {
   const classes = useStyles();

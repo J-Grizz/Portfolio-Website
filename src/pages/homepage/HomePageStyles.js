@@ -13,7 +13,7 @@ export default makeStyles({
     width: "100%"
   },
   utilityContainer: {
-    height: "780px",
+    height: "730px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -21,17 +21,13 @@ export default makeStyles({
       height: "10%",
     },
   },
-  utilityPaper: {
-    popsition: "relative",
-    height: "10%",
-    fontSize: "1.5rem",
+  butCont: {
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "rgba(255,255,255,.6) !important",
-    transition: "all 700ms ease-in-out !important",
-    "&:hover": {
-      transform: "scale(1.01)",
+    justifyContent: "flex-end",
+    "& div": {
+      backgroundColor: "rgba(255,255,255,.3)",
+      padding: "5px 7px",
+      borderRadius: "3px"
     }
   },
   link: {
@@ -40,7 +36,14 @@ export default makeStyles({
     cursor: `url(${mouseClick}), auto`,
   },
   button: {
-    fontFamily: "'Ubuntu', sans-serif;",
+    margin: "0 5px !important",
     fontSize: "1.5rem !important",
+    fontFamily: "'Ubuntu', sans-serif;",
+    cursor: `url(${mouseClick}), auto !important`,
+    backgroundColor: "rgba(255,255,255,.2) !important",
+    transition: "all 700ms ease-in-out !important",
+    "&:hover": {
+      transform: "scale(1.01)"
+    }
   }
 });

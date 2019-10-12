@@ -5,10 +5,20 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/styles";
+
+
+const useStyles = makeStyles({
+  logCont: {
+    "& h4": {
+      marginBottom: 10
+    }
+  }
+})
 
 export default function WriteUpDialog(props) {
   const { handleClose, open, projectData } = props;
-
+  const classes = useStyles();
   const skills = projectData.skills.map((each, i) => <DialogContentText key={i}>-{each}</DialogContentText>);
 
   const technologies = projectData.technologies.map((each, i) => <DialogContentText key={i}>-{each}</DialogContentText>);
@@ -28,7 +38,7 @@ export default function WriteUpDialog(props) {
       aria-labelledby="max-width-dialog-title"
     >
       <DialogTitle id="max-width-dialog-title">{projectData.name}</DialogTitle>
-      <DialogContent>
+      <DialogContent className={classes.logCont}>
         <h4>INTRO:</h4>
         <DialogContentText>
           {projectData.intro}

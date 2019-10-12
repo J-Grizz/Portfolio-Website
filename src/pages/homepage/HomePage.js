@@ -1,7 +1,6 @@
 import React from "react";
 import useStyles from "./HomePageStyles";
 import { Grid } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import Navbar from "../../components/navbar/Navbar";
@@ -46,33 +45,37 @@ export default function HomePage(props) {
           <Link className={classes.link} to="/projects">
             <ProjectButton />
           </Link>
-          <Paper className={classes.utilityPaper}>
-            You can also check me out on
-            <Button
-              className={classes.button}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.link}
-                href="https://github.com/J-Grizz">
-                github
-              </a>
-            </Button>
-            or
+
+          <div className={classes.butCont}>
+            <div>
               <Button
-              className={classes.button}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.link}
-                href="https://www.linkedin.com/in/james-gray-4910a0a2/">
-                LinkedIn
+                color="inherit"
+                variant="outlined"
+                className={classes.button}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}
+                  href="https://github.com/J-Grizz">
+                  github
               </a>
-            </Button>
-          </Paper>
+              </Button>
+              <Button
+                color="inherit"
+                variant="outlined"
+                className={classes.button}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}
+                  href="https://www.linkedin.com/in/james-gray-4910a0a2/">
+                  LinkedIn
+              </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </Grid>
-
     </Grid>
   )
-}
+};
