@@ -9,9 +9,6 @@ export default makeStyles({
     paddingTop: "110px",
     userSelect: "none",
   },
-  gridItem: {
-    width: "100%"
-  },
   utilityContainer: {
     height: "730px",
     display: "flex",
@@ -41,9 +38,9 @@ export default makeStyles({
     fontFamily: "'Ubuntu', sans-serif;",
     cursor: `url(${mouseClick}), auto !important`,
     backgroundColor: "rgba(255,255,255,.2) !important",
-    transition: "all 700ms ease-in-out !important",
+    transition: "all 400ms ease-in-out !important",
     "&:hover": {
-      transform: "scale(1.01)"
+      transform: "scale(1.03)"
     }
   }
 });

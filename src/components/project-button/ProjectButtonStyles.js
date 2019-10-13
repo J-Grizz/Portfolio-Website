@@ -6,7 +6,6 @@ export default makeStyles({
     backgroundColor: "rgba(255,255,255,.6)",
     color: "black",
     textAlign: "center",
-    maxWidth: 875,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:hover": {

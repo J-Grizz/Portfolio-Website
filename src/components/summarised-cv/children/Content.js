@@ -45,7 +45,7 @@ export default function Content(props) {
 
   const skills = content.skills.content.map(
     each =>
-      <div className={classes.singCont}>
+      <div key={each} className={classes.singCont}>
         <Typography gutterBottom variant="body2" component="p">
           {each}
         </Typography>
@@ -54,7 +54,7 @@ export default function Content(props) {
 
   const famTech = content.famTech.content.map(
     each =>
-      <div className={classes.singCont}>
+      <div key={each} className={classes.singCont}>
         <Typography gutterBottom variant="body2" component="p">
           {each}
         </Typography>

@@ -33,6 +33,9 @@ function Project(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className={classes.hiddenCont}>
+            <h1 className={classes.hiddenText}>Click for Live Demo</h1>
+          </div>
           <CardMedia
             className={classes.media}
             image={projectData.image}
@@ -62,7 +65,6 @@ function Project(props) {
             </Button>
           </a>
         </CardActions>
-
         <WriteUpDialog
           projectData={projectData}
           handleClose={handleClose}

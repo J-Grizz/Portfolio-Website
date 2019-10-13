@@ -13,15 +13,13 @@ export default function HomePage(props) {
   return (
     <Grid
       container
-      spacing={3}
-      justify="space-around"
-      alignItems="flex-start"
+      spacing={5}
+      justify="center"
       className={classes.grid}
     >
       <Navbar />
 
       <Grid
-        className={classes.gridItem}
         item
         md={6}
       >
@@ -30,7 +28,6 @@ export default function HomePage(props) {
         </Link>
       </Grid>
       <Grid
-        className={classes.gridItem}
         item
         md={6}
       >
