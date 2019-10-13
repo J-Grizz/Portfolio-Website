@@ -9,19 +9,11 @@ import ProjectsPage from "./pages/projectspage/ProjectsPage"
 import FullCV from "./pages/fullcv/FullCV"
 import "./App.css";
 
-App.defaultProps = {
-  sliderDuration: 8
-}
-
-function App(props) {
-  const { sliderDuration } = props;
-
+function App() {
   return (
     <div className="App">
 
-      <BackgroundSlider
-        duration={sliderDuration}
-      />
+      <BackgroundSlider />
 
       <Route
         render={({ location }) => (

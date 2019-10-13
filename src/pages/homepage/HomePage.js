@@ -6,6 +6,8 @@ import Button from "@material-ui/core/Button";
 import Navbar from "../../components/navbar/Navbar";
 import SumarisedPortFolio from "../../components/summarised-cv/SummarisedCV";
 import ProjectButton from "../../components/project-button/ProjectButton";
+import GitHubIcon from "../../media/githubicon.svg"
+import LinkedInIcon from "../../media/linkedinicon.svg"
 
 export default function HomePage(props) {
   const classes = useStyles();
@@ -54,6 +56,7 @@ export default function HomePage(props) {
                   rel="noopener noreferrer"
                   className={classes.link}
                   href="https://github.com/J-Grizz">
+                  <img src={GitHubIcon} alt="" />
                   github
               </a>
               </Button>
@@ -66,6 +69,7 @@ export default function HomePage(props) {
                   rel="noopener noreferrer"
                   className={classes.link}
                   href="https://www.linkedin.com/in/james-gray-4910a0a2/">
+                  <img src={LinkedInIcon} alt="" />
                   LinkedIn
               </a>
               </Button>

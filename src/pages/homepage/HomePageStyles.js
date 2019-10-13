@@ -31,6 +31,9 @@ export default makeStyles({
     color: "black",
     textDecoration: "none",
     cursor: `url(${mouseClick}), auto`,
+    "& img": {
+      marginRight: "4px"
+    }
   },
   button: {
     margin: "0 5px !important",
@@ -41,6 +44,10 @@ export default makeStyles({
     transition: "all 400ms ease-in-out !important",
     "&:hover": {
       transform: "scale(1.03)"
+    },
+    "& a": {
+      justifyContent: "space-between",
+      display: "flex"
     }
   }
 });

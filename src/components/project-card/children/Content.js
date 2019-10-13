@@ -11,9 +11,8 @@ const useStyles = makeStyles({
     height: 190,
     fontSize: "1.2rem",
     fontWeight: "100",
-    textOverflow: "ellipsis",
+    overflow: "hidden",
     display: "flex",
-    alignItems: "center",
     color: "rgb(50,50,50)"
   },
   cardContent: {
@@ -30,7 +29,7 @@ export default function Content(props) {
         {projectData.name}
       </Typography>
       <Box className={classes.container} component="div" textOverflow="ellipsis">
-        {projectData.intro}
+        {projectData.summary}
       </Box>
     </CardContent>
   )
