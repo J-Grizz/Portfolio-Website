@@ -16,6 +16,7 @@ export default makeStyles({
     }
   },
   media: {
+    width: "100%",
     height: 200,
     cursor: `url(${mouseClick}), auto`,
   },

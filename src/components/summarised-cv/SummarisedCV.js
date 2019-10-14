@@ -6,15 +6,22 @@ import cardBackground from "../../media/cardBackground.jpg";
 import useStyles from "./summarisedCVStyles"
 import Content from "./children/Content"
 import { CVObject } from "../../portfolioData"
+import ProgressiveImage from "../ProgressiveImage/ProgressiveImage"
 
 export default function SummarisedPortfolio() {
   const classes = useStyles();
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia
+        <ProgressiveImage
           className={classes.media}
-          image={cardBackground}
+          alt={"woman"}
+          overlaySrc={
+            "https://res.cloudinary.com/dufbyqbkk/image/upload/v1571035841/Portfolio/LoadImages/tinyImage_lbqch1.jpg"
+          }
+          src={
+            "https://res.cloudinary.com/dufbyqbkk/image/upload/v1571035873/Portfolio/LoadImages/cardBackground_xlb4c1.jpg"
+          }
         />
         <div className={classes.hiddenCont}>
           <h1 className={classes.hiddenText}> Click to view full Resume </h1>
