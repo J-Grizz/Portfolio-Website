@@ -67,25 +67,25 @@ export default function Content(props) {
         Summarised Resume
       </Typography>
       <Typography gutterBottom variant="h5" component="h4">
-        {content.desc.topic}:
+        {content.desc.topic}
       </Typography>
       <Typography gutterBottom variant="body2" component="p">
         {content.desc.content}
       </Typography>
       <Typography gutterBottom variant="h5" component="h4">
-        {content.exp.topic}:
+        {content.exp.topic}
       </Typography>
       <Typography gutterBottom variant="body2" component="p">
         {content.exp.content}
       </Typography>
       <Typography gutterBottom variant="h5" component="h4">
-        {content.famTech.topic}:
+        {content.famTech.topic}
       </Typography>
       <div className={classes.multiCont}>
         {famTech}
       </div>
       <Typography gutterBottom variant="h5" component="h4">
-        {content.skills.topic}:
+        {content.skills.topic}
       </Typography>
       <div className={classes.multiCont}>
         {skills}

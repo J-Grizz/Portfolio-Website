@@ -8,7 +8,7 @@ import mouseClick from "../../../media/mouseClick.png";
 
 const useStyles = makeStyles({
   container: {
-    height: 190,
+    height: 180,
     fontSize: "1.2rem",
     fontWeight: "100",
     overflow: "hidden",

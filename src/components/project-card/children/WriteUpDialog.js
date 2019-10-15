@@ -11,7 +11,8 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   logCont: {
     "& h4": {
-      marginBottom: 10
+      marginBottom: 10,
+      textTransform: "uppercase"
     }
   }
 })
@@ -39,25 +40,25 @@ export default function WriteUpDialog(props) {
     >
       <DialogTitle id="max-width-dialog-title">{projectData.name}</DialogTitle>
       <DialogContent className={classes.logCont}>
-        <h4>INTRO:</h4>
+        <h4>INTRO</h4>
         <DialogContentText>
           {projectData.intro}
         </DialogContentText>
-        <h4>WHY:</h4>
+        <h4>WHY</h4>
         <DialogContentText>
           {projectData.why}
         </DialogContentText>
-        <h4>Challenges:</h4>
+        <h4>Challenges</h4>
         {challenges}
-        <h4>Technolgies Used:</h4>
+        <h4>Technolgies Used</h4>
         {technologies}
-        <h4>Skills Used:</h4>
+        <h4>Skills Used</h4>
         {skills}
-        <h4>Conclusion:</h4>
+        <h4>Conclusion</h4>
         <DialogContentText>
           {projectData.conclusion}
         </DialogContentText>
-        <h4>Checkout the repo:</h4>
+        <h4>Checkout the repo</h4>
         <DialogContentText>
           <a target="_blank" rel="noopener noreferrer" href={projectData.gitHub}>{projectData.name} Repo</a>
         </DialogContentText>

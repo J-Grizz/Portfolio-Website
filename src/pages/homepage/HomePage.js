@@ -23,7 +23,10 @@ export default function HomePage(props) {
 
       <Grid
         item
-        md={6}
+        lg={6}
+        md={10}
+        xs={12}
+
       >
         <Link className={classes.link} to="/resume">
           <SumarisedPortFolio />
@@ -31,7 +34,9 @@ export default function HomePage(props) {
       </Grid>
       <Grid
         item
-        md={6}
+        lg={6}
+        md={10}
+        xs={12}
       >
         <div
           className={classes.utilityContainer}

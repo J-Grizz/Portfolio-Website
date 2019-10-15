@@ -21,6 +21,11 @@ const styles = {
     [sizes.down("md")]: {
       maxWidth: 600
     },
+    [sizes.down("xs")]: {
+      margin: 0,
+      marginBottom: "30px",
+      width: "98%"
+    },
     "&:hover": {
       transform: "scale(1.01)",
     },

@@ -1,4 +1,6 @@
 import sizes from "../../global-styles/sizes";
+import mouseClick from "../../media/mouseClick.png";
+
 
 const styles = {
   navbar: {
@@ -15,13 +17,13 @@ const styles = {
     justifyContent: "space-between",
   },
   link: {
-    cursor: "none",
+    cursor: `url(${mouseClick}), auto`,
     color: "white",
     textDecoration: "none",
   },
   navButton: {
     width: "11rem",
-    cursor: "none",
+    cursor: `url(${mouseClick}), auto`,
     borderRadius: "0",
     "&:hover": {
       backgroundColor: "rgba(255,255,255,.1)"
