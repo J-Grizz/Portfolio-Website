@@ -12,7 +12,7 @@ const styles = {
     backgroundColor: "rgba(255,255,255,.8)",
     color: "black",
     textAlign: "left",
-    height: 750,
+    minHeight: 750,
     transition: "all 700ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:hover div": {

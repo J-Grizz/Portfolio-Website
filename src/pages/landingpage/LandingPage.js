@@ -15,7 +15,7 @@ export default function LandingPage(props) {
           My name is James Gray, and this is my personal website.
       </h2>
         <h3>
-          Please click anywhere to find out more about me.
+          Click anywhere to find out more about me.
       </h3>
       </div>
     </Link>

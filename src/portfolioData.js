@@ -9,7 +9,7 @@ const CVObject = {
   },
   exp: {
     topic: "Experience",
-    content: ["In regards to programming I have no professional experience to date. I do however have a willingness to learn and a passion for problem solving. I believe my potential far outweighs my lack of professional experience, but don't take my word for it, check out my projects and decide for yourself."]
+    content: ["My experience to date has mainly been with personal projects. I do however have a willingness to learn and a passion for problem solving. I believe my potential far outweighs my lack of professional experience, but don't take my word for it, check out my projects and decide for yourself."]
   },
   famTech: {
     topic: "Familiar Technologies",

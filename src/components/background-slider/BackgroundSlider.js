@@ -3,7 +3,7 @@ import "./BackgroundSlider.css";
 
 export default function BackgroundSlidernew() {
   return (
-    <ul class="slideshow">
+    <ul className="slideshow">
       <li></li>
       <li></li>
       <li></li>
