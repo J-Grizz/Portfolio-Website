@@ -5,7 +5,7 @@ import viewsOfViews from "./media/views-of-views.png";
 const CVObject = {
   desc: {
     topic: "Personal Description",
-    content: ["I am a driven optimist who enjoys challenging the status quo. After one year at varsity, I went on to complete my yacht masters and sailed to various locations around the world. It was while working as a waiter that I discovered programming. Currently, I aspire to become a front-end UX developer."]
+    content: ["I am a driven optimist who enjoys challenging the status quo. After one year at varsity, I went on to complete my yacht masters and sailed to various locations around the world. It was later while working as a waiter that I discovered programming and haven't looked back since. Currently, I aspire to become a front-end UX developer."]
   },
   exp: {
     topic: "Experience",
