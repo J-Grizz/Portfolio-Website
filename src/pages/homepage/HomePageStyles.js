@@ -1,13 +1,23 @@
-import { makeStyles } from "@material-ui/styles";
 import mouseClick from "../../media/mouseClick.png";
+import sizes from "../../global-styles/sizes";
 
-export default makeStyles({
+const styles = {
   grid: {
     width: "100% !important",
     margin: "0 !important",
     padding: "1.5rem",
     paddingTop: "110px",
     userSelect: "none",
+    "& > div": {
+      [sizes.down("md")]: {
+        padding: "0 5px 30px 5px !important",
+      }
+    },
+
+    [sizes.down("md")]: {
+      padding: "0",
+      paddingTop: "110px",
+    }
   },
   utilityContainer: {
     height: "730px",
@@ -24,7 +34,10 @@ export default makeStyles({
     "& div": {
       backgroundColor: "rgba(255,255,255,.3)",
       padding: "5px 7px",
-      borderRadius: "3px"
+      borderRadius: "3px",
+      [sizes.down("md")]: {
+        marginTop: "610px",
+      }
     }
   },
   link: {
@@ -50,4 +63,6 @@ export default makeStyles({
       display: "flex"
     }
   }
-});
+};
+
+export default styles;

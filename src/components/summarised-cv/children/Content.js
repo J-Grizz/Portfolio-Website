@@ -64,7 +64,7 @@ export default function Content(props) {
   return (
     <CardContent className={classes.cardContent}>
       <Typography gutterBottom variant="h4" component="h2">
-        Summarised Resume
+        Summarised Resumé
       </Typography>
       <Typography gutterBottom variant="h5" component="h4">
         {content.desc.topic}

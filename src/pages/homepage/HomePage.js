@@ -1,16 +1,18 @@
 import React from "react";
-import useStyles from "./HomePageStyles";
 import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { withStyles } from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
 import Navbar from "../../components/navbar/Navbar";
 import SumarisedPortFolio from "../../components/summarised-cv/SummarisedCV";
 import ProjectButton from "../../components/project-button/ProjectButton";
 import GitHubIcon from "../../media/githubicon.svg"
 import LinkedInIcon from "../../media/linkedinicon.svg"
+import styles from "./HomePageStyles";
 
-export default function HomePage(props) {
-  const classes = useStyles();
+
+function HomePage(props) {
+  const { classes } = props;
 
   return (
     <Grid
@@ -26,8 +28,8 @@ export default function HomePage(props) {
         lg={6}
         md={10}
         xs={12}
-
       >
+
         <Link className={classes.link} to="/resume">
           <SumarisedPortFolio />
         </Link>
@@ -85,3 +87,5 @@ export default function HomePage(props) {
     </Grid>
   )
 };
+
+export default withStyles(styles)(HomePage)
