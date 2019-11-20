@@ -30,7 +30,7 @@ function HomePage(props) {
         xs={12}
       >
 
-        <Link className={classes.link} to="/resume">
+        <Link className={classes.link} to="/resumé">
           <SumarisedPortFolio />
         </Link>
       </Grid>
