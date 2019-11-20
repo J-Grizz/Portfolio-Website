@@ -53,7 +53,7 @@ function App() {
                 />
                 <Route
                   exact
-                  path="/resume"
+                  path="/resumé"
                   render={() =>
                     <Page>
                       <FullCV />
