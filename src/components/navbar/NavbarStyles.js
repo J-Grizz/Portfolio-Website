@@ -9,7 +9,7 @@ const styles = {
     width: "100vw",
     position: "fixed",
     zIndex: 10,
-    background: "rgba(0,0,0,.7)",
+    backgroundColor: "rgba(0,0,0,.7)",
   },
   container: {
     display: "flex",
@@ -20,6 +20,10 @@ const styles = {
     cursor: `url(${mouseClick}), auto`,
     color: "white",
     textDecoration: "none",
+  },
+  chosen: {
+    textDecoration: "underline",
+    textUnderlineOffset: "1em"
   },
   navButton: {
     width: "11rem",

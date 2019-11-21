@@ -6,3 +6,7 @@
 .App:active {
   cursor: url(media/mouseClick.png), auto;
 }
+
+.chosen {
+  color: red;
+}

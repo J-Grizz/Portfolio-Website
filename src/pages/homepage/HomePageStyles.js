@@ -53,10 +53,10 @@ const styles = {
     fontSize: "1.5rem !important",
     fontFamily: "'Ubuntu', sans-serif;",
     cursor: `url(${mouseClick}), auto !important`,
-    backgroundColor: "rgba(255,255,255,.2) !important",
+    backgroundColor: "rgba(255,255,255,.2)",
     transition: "all 400ms ease-in-out !important",
     "&:hover": {
-      transform: "scale(1.03)"
+      backgroundColor: "rgba(255, 255, 255, 0.5)"
     },
     "& a": {
       justifyContent: "space-between",

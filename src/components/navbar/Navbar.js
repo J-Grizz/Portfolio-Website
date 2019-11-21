@@ -31,6 +31,7 @@ function Navbar(props) {
         key={nav}
         to={`/${nav}`}
         className={classes.link}
+        activeClassName={classes.chosen}
       >
         <Button
           className={classes.navButton}
@@ -67,7 +68,7 @@ function Navbar(props) {
       <Toolbar className={classes.container}>
         <NavLink
           className={classes.link}
-          to="/">
+          to="/home">
           <Button
             className={classes.navButton}
             color="inherit"

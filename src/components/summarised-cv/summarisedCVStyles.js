@@ -26,6 +26,7 @@ export default makeStyles({
     justifyContent: "center"
   },
   hiddenText: {
+    cursor: `url(${mouseClick}), auto`,
     transition: "all 700ms ease-in-out",
     color: "white",
     position: "absolute",

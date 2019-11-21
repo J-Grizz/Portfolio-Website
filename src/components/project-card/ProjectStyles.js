@@ -13,7 +13,7 @@ const styles = {
     color: "black",
     textAlign: "left",
     minHeight: 750,
-    transition: "all 700ms ease-in-out",
+    transition: "all 600ms ease-in-out",
     cursor: `url(${mouseClick}), auto`,
     "&:hover div": {
       opacity: 1,
