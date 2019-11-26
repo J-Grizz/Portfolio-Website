@@ -10,7 +10,6 @@ import GitHubIcon from "../../media/githubicon.svg"
 import LinkedInIcon from "../../media/linkedinicon.svg"
 import styles from "./HomePageStyles";
 
-
 function HomePage(props) {
   const { classes } = props;
 

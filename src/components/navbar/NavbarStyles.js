@@ -22,8 +22,7 @@ const styles = {
     textDecoration: "none",
   },
   chosen: {
-    textDecoration: "underline",
-    textUnderlineOffset: "1em"
+    color: "rgb(120,120,120)"
   },
   navButton: {
     width: "11rem",

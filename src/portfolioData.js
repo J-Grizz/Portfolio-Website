@@ -24,7 +24,7 @@ const CVObject = {
 const projectData = [
   {
     name: "Interactive iPhone",
-    url: "https://interactiveiphone.netlify.com/",
+    url: "https://interactive-iphone.netlify.com/",
     image: interactiveIphone,
     gitHub: "https://github.com/J-Grizz/Interactive-iPhone",
     summary: "An iPhone designed specifically to display my skills and capabilities with pure HTML, CSS and JavaScript. It contains some of the prevalent projects I have made on my educational journey.",
