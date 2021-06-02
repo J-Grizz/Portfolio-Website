@@ -34,7 +34,7 @@ function FullCV(props) {
   return (
     <div className={classes.root}>
       <Navbar />
-      <embed className={classes.viewer} src="https://res.cloudinary.com/dufbyqbkk/image/upload/v1570819330/Portfolio/James%27-Resume.pdf"
+      <embed className={classes.viewer} src="https://res.cloudinary.com/dufbyqbkk/image/upload/v1622646802/Portfolio/James'-Resume(new).pdf"
         type="application/pdf"></embed>
     </div>
   )
