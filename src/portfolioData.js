@@ -5,15 +5,15 @@ import viewsOfViews from "./media/views-of-views.png";
 const CVObject = {
   desc: {
     topic: "Personal Description",
-    content: ["I am a driven optimist who enjoys challenging the status quo. After one year at varsity, I went on to complete my yacht masters and sailed to various locations around the world. It was later while working as a waiter that I discovered programming and haven't looked back since. Currently, I aspire to become a front-end UX developer."]
+    content: ["Passionate about all things web. A developer that cares about quality, in terms of both code and the final product. Thorough, efficient, and competent, someone who enjoys a challenge.Works best with modern front-end PWA frameworks (React, Angular, Vue) and SQL databases (MySQL, MariaDB)."]
   },
   exp: {
     topic: "Experience",
-    content: ["My experience to date has mainly been with personal projects. I do however have a willingness to learn and a passion for problem solving. I believe my potential far outweighs my lack of professional experience, but don't take my word for it, check out my projects and decide for yourself."]
+    content: ["Close to 3 years of coding/develoment experience. Started as a self taught developer who was lucky enough to get a job at the start of 2020 and has been on the ground running ever since."]
   },
   famTech: {
     topic: "Familiar Technologies",
-    content: ["HTML5 & CSS3", "JavaScript", "React", "MaterialUI", "Bootstrap", "JQuery", "SCSS", "JSS", "NodeJS", "Express", "NPM", "Git", "GitHub",]
+    content: ["JavaScript", "TypeScript", "SQL", "HTML5 & CSS3", "React", "vue", "Angular", "SCSS", "NodeJS", "PHP", "Git"]
   },
   skills: {
     topic: "Skills",
